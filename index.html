@@ -242,6 +242,7 @@
             </div>
 
             <div id="employment" class="tabcontent">
+                
                 <div class="form-group">
                     <div class="label-container">
                         <label for="occupation-type">Jenis Pekerjaan: <span class="required-asterisk">*</span></label>
@@ -261,27 +262,50 @@
                         <label for="gross-income">Anggaran Pendapatan Bulanan (RM): <span class="required-asterisk">*</span></label>
                     </div>
                     <div class="input-container">
-                        <input type="number" id="gross-income" name="gross-income" placeholder="i.e. : 3000" required>
+                        <input type="number" id="gross-income" name="gross-income" placeholder="i.e. : 1500" required>
                     </div>
                 </div>
 
                 <div class="form-group">
                     <div class="label-container">
-                        <label for="employer-name">Nama Majikan: <span class="required-asterisk">*</span></label>
+                        <label for="ssm">Adakah perniagaan anda berdaftar di bawah SSM?<span class="required-asterisk">*</span></label>
                     </div>
                     <div class="input-container">
-                        <input type="text" id="employer-name" name="employer-name" placeholder="Nama majikan tempat kerja anda" required>
+                        <select id="ssm" name="ssm" required>
+                            <option value="">--- Pilih Satu ---</option>
+                            <option value="yes">Ya</option>
+                            <option value="no">Tidak</option>
+                        </select>
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <div class="label-container">
+                        <label for="biz-bank">Adakah anda mempunyai Akaun Bank Perniagaan yang berasingan?<span class="required-asterisk">*</span></label>
+                    </div>
+                    <div class="input-container">
+                        <select id="biz-bank" name="biz-bank" required>
+                            <option value="">--- Pilih Satu ---</option>
+                            <option value="yes">Ya</option>
+                            <option value="no">Tidak</option>
+                        </select>
                     </div>
                 </div>
 
                 <div class="form-group">
                     <div class="label-container">
-                        <label for="employer-phone">No. Telefon Majikan: <span class="required-asterisk">*</span></label>
+                        <label for="existing-facilities">Adakah anda mempunyai kemudahan pembiayaan seperti pinjaman peribadi, pinjaman kereta, dan lain-lain<span class="required-asterisk">*</span></label>
                     </div>
                     <div class="input-container">
-                        <input type="text" id="employer-phone" name="employer-phone" placeholder="i.e. : +6034567890" required>
+                        <select id="existing-facilities" name="existing-facilities" required>
+                            <option value="">--- Pilih Satu ---</option>
+                            <option value="yes">Ya</option>
+                            <option value="no">Tidak</option>
+                        </select>
                     </div>
                 </div>
+                
 
                 <div class="button-container">
                     <button type="button" class="btn btn-primary" onclick="moveToPreviousTab()">Kembali</button>

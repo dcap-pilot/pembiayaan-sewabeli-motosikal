@@ -1,0 +1,295 @@
+input, select {
+    -webkit-appearance: none; /* Disables iOS specific styling */
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/* For desktop view */
+header img {
+    width: 40%; /* You can adjust the value as needed */
+    height: auto; /* This will maintain the aspect ratio */
+    /* Add any additional styling as needed */
+}
+
+@media (max-width: 768px) {
+    header img {
+        width: 100%; /* Make the image width 100% of the container */
+        max-width: 100%; /* Ensure the image doesn't exceed its original size */
+        height: auto; /* Maintain the aspect ratio */
+    }
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; 
+    background-color: white;
+}
+
+.form-container {
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    background-color: white;
+}
+
+header h1 {
+    color: #1157A5;
+}
+
+header p {
+    text-align: right;
+    color: grey;
+}
+
+.tab {
+    overflow: hidden;
+    background-color: #F5F5F5;
+    border: none;
+    margin-bottom: 10px;
+    
+}
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* Add the font family here */
+}
+
+.tab button:hover {
+    background-color: #ddd;
+}
+
+.tab button.active {
+    background-color: white;
+    color: #1157A5;
+    font-weight: bold;
+}
+
+.tabcontent {
+    display: none; /* Change this to block to make it visible */
+    padding: 6px 12px;
+    border: none
+}
+
+.tablinks.active{
+    display: block;
+}
+
+input[type=submit] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+
+}
+
+input[type=submit]:hover {
+    opacity: 0.8;
+
+}
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px; /* Adjust the margin to your preference */
+}
+
+.label-container {
+    flex-basis: 20%; /* Adjust this percentage based on your label width requirement */
+    text-align: left;
+    font-size: 14px;
+}
+
+.input-container {
+    flex-grow: 1; /* Ensure input containers take up the remaining space */
+    font-size: 14px;
+}
+
+
+.input-results {
+    flex-grow: 1; /* Ensure input containers take up the remaining space */
+    font-size: 14px;
+    border: none;
+}
+
+
+.input-container input[type="text"],
+.input-container input[type="tel"],
+.input-container input[type="email"],
+.input-container input[type="number"],
+.input-container input[type="email"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #f7f7f7;
+    background-color: #f7f7f7;
+    border-radius: 25px;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+#total-price {
+    background: transparent;
+    outline: none;
+    border: none;
+    width: 100%;
+    margin: 8px 0;
+    display: inline-block;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+
+#financing-amount {
+    background: transparent;
+    outline: none;
+    border: none;
+    width: 100%;
+    margin: 8px 0;
+    display: inline-block;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+
+#balance-ori-payable {
+    background: transparent;
+    outline: none;
+    border: none;
+    width: 100%;
+    margin: 8px 0;
+    display: inline-block;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+
+#monthly-instalment {
+    background: transparent;
+    outline: none;
+    border: none;
+    width: 100%;
+    margin: 8px 0;
+    display: inline-block;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+
+select {
+    width: 100%; /* Input fields take the full width of the input container */
+    padding: 10px;
+    border-radius: 25px;
+    border: 1px solid #f7f7f7;
+    background-color: #f7f7f7;
+}
+
+
+@media (max-width: 768px) {
+    .form-group {
+        flex-direction: column;
+    }
+    .label-container,
+    .input-container {
+        flex-basis: auto; /* On small screens, both containers take up the width they need */
+        width: 100%; /* On small screens, they stack and take full width */
+    }
+}
+
+.input-container select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+/* This targets the options within the select element */
+.input-container select option {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+
+.btn-primary{
+    color:#FFFFFF;
+    background-color: #1157A5;
+    border-color: #1157A5;
+    border-radius: 25px;
+}
+
+.btn{
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid;
+    padding: 0.5rem 2rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    border-radius: 25px;
+
+}
+
+#save_button, #next_button {
+    transition: opacity 0.3s ease; /* Smooth transition for the opacity */
+}
+
+#save_button:hover, #next_button:hover {
+    opacity: 0.5; /* Adjust the opacity when hovered */
+}
+
+.button-container{
+    padding: 30px 0px 0px 0px;
+}
+
+label[for="yes"] {
+    margin-right: 20px; /* Space after the radio button */
+    margin-bottom: 10px; /* Space below each radio button */
+}
+
+
+.file-input {
+    display: none; /* Hide the default file input */
+}
+
+.custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    background-color: #F5F5F5;
+}
+
+.file-name-display {
+    border: 1px solid #ccc;
+    padding: 6px 12px;
+    margin-right: 5px; /* To give some space between the text input and the label */
+
+}
+
+.required-asterisk {
+    color: red;
+}
+
+label {
+    color:#1157A5
+}

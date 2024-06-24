@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pembiayaan Sewa Beli Motosikal</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="form-container">
+        <header>
+            <img src="./banner.png" alt="banner">
+        </header>
+        <form action="/submit-form" method="post">
+            <div class="tab">
+                <button type="button" class="tablinks active" onclick="openTab(event, 'choose-model')">Pilihan Model</button>
+                <button type="button" class="tablinks" onclick="openTab(event, 'customer-details')">Butiran Individu</button>
+                <button type="button" class="tablinks" onclick="openTab(event, 'customer-address')">Alamat</button>
+                <button type="button" class="tablinks" onclick="openTab(event, 'employment')">Butiran Pekerjaan</button>
+            </div>
+
+
+            <div id="choose-model" class="tabcontent active">
+                
+
+                <div class="form-group">
+                    <div class="label-container">
+                        <label for="bike-model">Pilihan Model Motosikal: <span class="required-asterisk">*</span></label>
+                    </div>
+                    <div class="input-container">
+                        <select id="gender" name="gender" required>
+                            <option value="">--- Pilih Satu ---</option>
+                            <option value="BLUESHARK R1 - WITHOUT BATTERY">BLUESHARK R1 - WITHOUT BATTERY</option>
+                            <option value="BLUESHARK R1 - WITHOUT BATTERY (CAMERA)">BLUESHARK R1 - WITHOUT BATTERY (CAMERA)</option>
+                            <option value="HONDA ADV160 (ADV160AP)">HONDA ADV160 (ADV160AP)</option>
+                            <option value="HONDA BEAT (ACH110CBFH/J/L/N/R)">HONDA BEAT (ACH110CBFH/J/L/N/R)</option>
+                            <option value="HONDA CBR150R (CBR150RAM/AM9)">HONDA CBR150R (CBR150RAM/AM9)</option>
+                            <option value="HONDA CBR150R REPSOL EDITION (CBR150RAM3)">HONDA CBR150R REPSOL EDITION (CBR150RAM3)</option>
+                            <option value="HONDA RS-X NEW/TRICO (FS150FA/FA2)">HONDA RS-X NEW/TRICO (FS150FA/FA2)</option>
+                            <option value="HONDA RS150R (FS150FN4)">HONDA RS150R (FS150FN4)</option>
+                            <option value="HONDA VARIO 125 (ACB125CBTP)">HONDA VARIO 125 (ACB125CBTP)</option>
+                            <option value="HONDA VARIO 160 (ACB160CATN)">HONDA VARIO 160 (ACB160CATN)</option>
+                            <option value="HONDA VARIO 160 CHARCOAL">HONDA VARIO 160 CHARCOAL</option>
+                            <option value="HONDA WAVE 125i DOUBLE DISC">HONDA WAVE 125i DOUBLE DISC</option>
+                            <option value="HONDA WAVE ALPHA 110 FI">HONDA WAVE ALPHA 110 FI</option>
+                            <option value="HONDA WAVE ALPHA DISK (AFS110MCSN)">HONDA WAVE ALPHA DISK (AFS110MCSN)</option>
+                            <option value="KTM RC200">KTM RC200</option>
+                            <option value="YAMAHA 135LC - AUTO CLUTCH">YAMAHA 135LC - AUTO CLUTCH</option>
+                            <option value="YAMAHA 135LC SPECIAL EDITION">YAMAHA 135LC SPECIAL EDITION</option>
+                            <option value="YAMAHA 135LC V8 FUEL INJECTION">YAMAHA 135LC V8 FUEL INJECTION</option>
+                            <option value="YAMAHA 135LC V8 FUEL INJECTION SPECIAL EDITION">YAMAHA 135LC V8 FUEL INJECTION SPECIAL EDITION</option>
+                            <option value="YAMAHA 135LC V8 FUEL INJECTION SPECIAL EDITION (5MRO)">YAMAHA 135LC V8 FUEL INJECTION SPECIAL EDITION (5MRO)</option>
+                            <option value="YAMAHA EGO AVANTIZ">YAMAHA EGO AVANTIZ</option>
+                            <option value="YAMAHA EGO GEAR">YAMAHA EGO GEAR</option>
+                            <option value="YAMAHA EGO SOLARIZ">YAMAHA EGO SOLARIZ</option>
+                            <option value="YAMAHA EZ115">YAMAHA EZ115</option>
+                            <option value="YAMAHA LAGENDA 115Z (UE15)">YAMAHA LAGENDA 115Z (UE15)</option>
+                            <option value="YAMAHA MT15">YAMAHA MT15</option>
+                            <option value="YAMAHA MT25">YAMAHA MT25</option>
+                            <option value="YAMAHA MT25 - B">YAMAHA MT25 - B</option>
+                            <option value="YAMAHA NMAX">YAMAHA NMAX</option>
+                            <option value="YAMAHA NVX (SG48)">YAMAHA NVX (SG48)</option>
+                            <option value="YAMAHA NVX ABS">YAMAHA NVX ABS</option>
+                            <option value="YAMAHA NVX V2">YAMAHA NVX V2</option>
+                            <option value="YAMAHA NVX V2 ABS">YAMAHA NVX V2 ABS</option>
+                            <option value="YAMAHA R15">YAMAHA R15</option>
+                            <option value="YAMAHA R15M">YAMAHA R15M</option>
+                            <option value="YAMAHA R25">YAMAHA R25</option>
+                            <option value="YAMAHA R25 - B">YAMAHA R25 - B</option>
+                            <option value="YAMAHA TRACER 9GT">YAMAHA TRACER 9GT</option>
+                            <option value="YAMAHA XMAX 250">YAMAHA XMAX 250</option>
+                            <option value="YAMAHA Y15ZR">YAMAHA Y15ZR</option>
+                            <option value="YAMAHA Y15ZR (2022) NEW COLOUR">YAMAHA Y15ZR (2022) NEW COLOUR</option>
+                            <option value="YAMAHA Y15ZR SE">YAMAHA Y15ZR SE</option>
+                            <option value="YAMAHA Y16ZR">YAMAHA Y16ZR</option>
+                            <option value="YAMAHA Y16ZR ABS">YAMAHA Y16ZR ABS</option>
+                            <option value="YAMAHA Y16ZR DOXOU">YAMAHA Y16ZR DOXOU</option>
+                            <option value="YAMAHA Y16ZR DOXOU 2023">YAMAHA Y16ZR DOXOU 2023</option>
+                            <option value="YAMAHA Y16ZR WGP EDITION">YAMAHA Y16ZR WGP EDITION</option>
+                            <option value="YAMAHA YZF-R15">YAMAHA YZF-R15</option>
+                        </select>
+                    </div>
+                </div>
+
+
+                <div class="button-container">
+                    <button type="button" class="btn btn-primary" onclick="moveToNextTab()">Seterusnya</button>
+                </div>
+            </div>
+
+
+
+            <div id="customer-details" class="tabcontent">
+                <div class="form-group">
+                    <div class="label-container">
+                        <label for="name">Nama: <span class="required-asterisk">*</span></label>
+                    </div>
+                    <div class="input-container">
+                        <input type="text" id="name" name="name" placeholder="Nama penuh mengikut NRIC" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="label-container">
+                        <label for="nric-no">No. Kad Pengenalan (NRIC.):<span class="required-asterisk">*</span></label>
+                    </div>
+                    <div class="input-container">
+                        <input type="text" id="nric-no" name="nric-no" placeholder="i.e. : 888888-88-8888" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="label-container">
+                        <label for="mobile-number">No. Telefon: <span class="required-asterisk">*</span></label>
+                    </div>
+                    <div class="input-container">
+                        <input type="text" id="mobile-number" name="mobile-number" placeholder="i.e. : +60123456789" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="label-container">
+                        <label for="gender">Jantina: <span class="required-asterisk">*</span></label>
+                    </div>
+                    <div class="input-container">
+                        <select id="gender" name="gender" required>
+                            <option value="">--- Pilih Satu ---</option>
+                            <option value="male">Lelaki</option>
+                            <option value="female">Perempuan</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="label-container">
+                        <label for="marital-status">Status Perkahwinan: <span class="required-asterisk">*</span></label>
+                    </div>
+                    <div class="input-container">
+                        <select id="marital-status" name="marital-status" required>
+                            <option value="">--- Pilih Satu ---</option>
+                            <option value="single">Bujang</option>
+                            <option value="married">Berkahwin</option>
+                            <option value="divorced">Duda/Janda</option>
+                            <option value="widowed">Balu</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="button-container">
+                    <button type="button" class="btn btn-primary" onclick="moveToPreviousTab()">Kembali</button>
+                    <button type="button" class="btn btn-primary" onclick="moveToNextTab()">Seterusnya</button>
+                </div>
+            </div>
+
+            <div id="customer-address" class="tabcontent">
+                <div class="form-group">
+                    <div class="label-container">
+                        <label for="address-line-1">Alamat Kediaman: <span class="required-asterisk">*</span></label>
+                    </div>
+                    <div class="input-container">
+                        <input type="text" id="address-line-1" name="address-line-1" placeholder="Alamat Baris 1" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="label-container">
+                        <label for="address-line-2"></label>
+                    </div>
+                    <div class="input-container">
+                        <input type="text" id="address-line-2" name="address-line-2" placeholder="Alamat Baris 2">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="label-container">
+                        <label for="city">Bandar: <span class="required-asterisk">*</span></label>
+                    </div>
+                    <div class="input-container">
+                        <input type="text" id="city" name="city" placeholder="i.e. : Shah Alam" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="label-container">
+                        <label for="postcode">Poskod: <span class="required-asterisk">*</span></label>
+                    </div>
+                    <div class="input-container">
+                        <input type="text" id="postcode" name="postcode" placeholder="i.e. : 50000" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="label-container">
+                        <label for="state">Negeri: <span class="required-asterisk">*</span></label>
+                    </div>
+                    <div class="input-container">
+                        <select id="state" name="state" required>
+                            <option value="">--- Pilih Satu ---</option>
+                            <optgroup label="J">
+                                <option value="johor">Johor</option>
+                            </optgroup>
+                            <optgroup label="K">
+                                <option value="kedah">Kedah</option>
+                                <option value="kelantan">Kelantan</option>
+                                <option value="kuala_lumpur">Kuala Lumpur</option>
+                            </optgroup>
+                            <optgroup label="L">
+                                <option value="labuan">Labuan</option>
+                            </optgroup>
+                            <optgroup label="M">
+                                <option value="melaka">Melaka</option>
+                            </optgroup>
+                            <optgroup label="N">
+                                <option value="negeri_sembilan">Negeri Sembilan</option>
+                            </optgroup>
+                            <optgroup label="P">
+                                <option value="pahang">Pahang</option>
+                                <option value="perak">Perak</option>
+                                <option value="perlis">Perlis</option>
+                                <option value="pulau_pinang">Pulau Pinang</option>
+                                <option value="putrajaya">Putrajaya</option>
+                            </optgroup>
+                            <optgroup label="S">
+                                <option value="sabah">Sabah</option>
+                                <option value="sarawak">Sarawak</option>
+                                <option value="selangor">Selangor</option>
+                            </optgroup>
+                            <optgroup label="T">
+                                <option value="terengganu">Terengganu</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="button-container">
+                    <button type="button" class="btn btn-primary" onclick="moveToPreviousTab()">Kembali</button>
+                    <button type="button" class="btn btn-primary" onclick="moveToNextTab()">Seterusnya</button>
+                </div>
+            </div>
+
+            <div id="employment" class="tabcontent">
+                <div class="form-group">
+                    <div class="label-container">
+                        <label for="occupation-type">Jenis Pekerjaan: <span class="required-asterisk">*</span></label>
+                    </div>
+                    <div class="input-container">
+                        <select id="occupation-type" name="occupation-type" required>
+                            <option value="">--- Pilih Satu ---</option>
+                            <option value="private-sector-employee">Pekerja Swasta</option>
+                            <option value="govt-job">Pekerja Kerajaan</option>
+                            <option value="self-employed">Bekerja Sendiri</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="label-container">
+                        <label for="gross-income">Anggaran Pendapatan Bulanan (RM): <span class="required-asterisk">*</span></label>
+                    </div>
+                    <div class="input-container">
+                        <input type="number" id="gross-income" name="gross-income" placeholder="i.e. : 3000" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="label-container">
+                        <label for="employer-name">Nama Majikan: <span class="required-asterisk">*</span></label>
+                    </div>
+                    <div class="input-container">
+                        <input type="text" id="employer-name" name="employer-name" placeholder="Nama majikan tempat kerja anda" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="label-container">
+                        <label for="employer-phone">No. Telefon Majikan: <span class="required-asterisk">*</span></label>
+                    </div>
+                    <div class="input-container">
+                        <input type="text" id="employer-phone" name="employer-phone" placeholder="i.e. : +6034567890" required>
+                    </div>
+                </div>
+
+                <div class="button-container">
+                    <button type="button" class="btn btn-primary" onclick="moveToPreviousTab()">Kembali</button>
+                    <button type="submit" class="btn btn-primary">Hantar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

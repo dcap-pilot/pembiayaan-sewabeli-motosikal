@@ -293,3 +293,8 @@ label[for="yes"] {
 label {
     color:#1157A5
 }
+
+.guide-required-asterisk {
+    font-size: 12px;
+    margin-bottom: 20px;
+}

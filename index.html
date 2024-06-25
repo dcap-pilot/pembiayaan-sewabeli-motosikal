@@ -20,11 +20,14 @@
                 <button type="button" class="tablinks" onclick="openTab(event, 'customer-details')">Butiran Individu</button>
                 <button type="button" class="tablinks" onclick="openTab(event, 'customer-address')">Alamat</button>
                 <button type="button" class="tablinks" onclick="openTab(event, 'employment')">Butiran Pekerjaan</button>
+                <button type="button" class="tablinks" onclick="openTab(event, 'references')">Rujukan</button>
             </div>
 
+            <!-- Choose Model --> 
 
             <div id="choose-model" class="tabcontent active">
-                
+
+                <p class ="guide-required-asterisk">Ruangan bertanda asterisk (*) wajib diisi</p>
 
                 <div class="form-group">
                     <div class="label-container">
@@ -91,9 +94,12 @@
                 </div>
             </div>
 
-
+            <!-- Customer Details -->
 
             <div id="customer-details" class="tabcontent">
+
+                <p class ="guide-required-asterisk">Ruangan bertanda asterisk (*) wajib diisi</p>
+
                 <div class="form-group">
                     <div class="label-container">
                         <label for="name">Nama: <span class="required-asterisk">*</span></label>
@@ -105,7 +111,7 @@
 
                 <div class="form-group">
                     <div class="label-container">
-                        <label for="nric-no">No. Kad Pengenalan (NRIC.):<span class="required-asterisk">*</span></label>
+                        <label for="nric-no">No. Kad Pengenalan (NRIC):<span class="required-asterisk">*</span></label>
                     </div>
                     <div class="input-container">
                         <input type="text" id="nric-no" name="nric-no" placeholder="i.e. : 888888-88-8888" required>
@@ -118,6 +124,15 @@
                     </div>
                     <div class="input-container">
                         <input type="text" id="mobile-number" name="mobile-number" placeholder="i.e. : +60123456789" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="label-container">
+                        <label for="email-address">Alamat Emel: <span class="required-asterisk">*</span></label>
+                    </div>
+                    <div class="input-container">
+                        <input type="email" id="email-address" name="email-address" placeholder="i.e. : abc@example.com" required>
                     </div>
                 </div>
 
@@ -155,7 +170,12 @@
                 </div>
             </div>
 
+            <!-- Customer Address -->
+
             <div id="customer-address" class="tabcontent">
+
+                <p class ="guide-required-asterisk">Ruangan bertanda asterisk (*) wajib diisi</p>
+
                 <div class="form-group">
                     <div class="label-container">
                         <label for="address-line-1">Alamat Kediaman: <span class="required-asterisk">*</span></label>
@@ -241,7 +261,11 @@
                 </div>
             </div>
 
+            <!-- Employment -->
+
             <div id="employment" class="tabcontent">
+
+                <p class ="guide-required-asterisk">Ruangan bertanda asterisk (*) wajib diisi</p>
                 
                 <div class="form-group">
                     <div class="label-container">
@@ -268,7 +292,7 @@
 
                 <div class="form-group">
                     <div class="label-container">
-                        <label for="ssm">Adakah perniagaan anda berdaftar di bawah SSM? <span class="required-asterisk">*</span></label>
+                        <label for="ssm">Adakah perniagaan anda berdaftar di bawah SSM?<span class="required-asterisk">*</span></label>
                     </div>
                     <div class="input-container">
                         <select id="ssm" name="ssm" required>
@@ -282,7 +306,7 @@
 
                 <div class="form-group">
                     <div class="label-container">
-                        <label for="biz-bank">Adakah anda mempunyai Akaun Bank Perniagaan yang berasingan? <span class="required-asterisk">*</span></label>
+                        <label for="biz-bank">Adakah anda mempunyai Akaun Bank Perniagaan yang berasingan?<span class="required-asterisk">*</span></label>
                     </div>
                     <div class="input-container">
                         <select id="biz-bank" name="biz-bank" required>
@@ -295,7 +319,7 @@
 
                 <div class="form-group">
                     <div class="label-container">
-                        <label for="existing-facilities">Adakah anda mempunyai kemudahan pembiayaan seperti pinjaman peribadi, pinjaman kereta, dan lain-lain <span class="required-asterisk">*</span></label>
+                        <label for="existing-facilities">Adakah anda mempunyai kemudahan pembiayaan seperti pinjaman peribadi, pinjaman kereta, dan lain-lain<span class="required-asterisk">*</span></label>
                     </div>
                     <div class="input-container">
                         <select id="existing-facilities" name="existing-facilities" required>
@@ -312,6 +336,114 @@
                     <button type="submit" class="btn btn-primary">Hantar</button>
                 </div>
             </div>
+
+
+
+            <!-- References -->
+
+            <div id="references" class="tabcontent">
+                
+                <p class ="guide-required-asterisk">Ruangan bertanda asterisk (*) wajib diisi</p>
+
+                <h4>Rujukan 1</h4>
+                
+
+                <div class="form-group">
+                    <div class="label-container">
+                        <label for="ref-1-name">Nama:</label>
+                    </div>
+                    <div class="input-container">
+                        <input type="text" id="ref-1-name" name="ref-1-name" placeholder="Nama penuh mengikut NRIC">
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <div class="label-container">
+                        <label for="ref-1-nric-no">No. Kad Pengenalan (NRIC):</label>
+                    </div>
+                    <div class="input-container">
+                        <input type="text" id="ref-1-nric-no" name="ref-1-nric-no" placeholder="Eg.: 888888-88-8888">
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <div class="label-container">
+                        <label for="ref-1-mobile-number">No. Telefon:</label>
+                    </div>
+                    <div class="input-container">
+                        <input type="text" id="ref-1-mobile-number" name="ref-1-mobile-number" placeholder="Eg.: +60123456789">
+                    </div>
+                </div>
+
+                
+                <div class="form-group">
+                    <div class="label-container">
+                        <label for="ref-1-relationship">Hubungan:</label>
+                    </div>
+                    <div class="input-container">
+                        <select id="ref-1-relationship" name="ref-1-relationship">
+                            <option value="">--- Pilih Satu ---</option>
+                            <option value="parents">Ibu / Bapa</option>
+                            <option value="spouse">Suami / Isteri</option>
+                            <option value="siblings">Adik-beradik</option>
+                            <option value="child">Anak</option>
+                            <option value="in-laws">Mertua</option>
+                            <option value="others">Lain-lain</option>
+                        </select>
+                    </div>
+                </div>
+
+
+                <h4>Rujukan 2</h4>
+                
+
+                <div class="form-group">
+                    <div class="label-container">
+                        <label for="ref-2-name">Nama:</label>
+                    </div>
+                    <div class="input-container">
+                        <input type="text" id="ref-2-name" name="ref-2-name" placeholder="Nama penuh mengikut NRIC">
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <div class="label-container">
+                        <label for="ref-2-mobile-number">No. Telefon:</label>
+                    </div>
+                    <div class="input-container">
+                        <input type="text" id="ref-2-mobile-number" name="ref-2-mobile-number" placeholder="Eg.: +60123456789">
+                    </div>
+                </div>
+
+                
+                <div class="form-group">
+                    <div class="label-container">
+                        <label for="ref-2-relationship">Hubungan:</label>
+                    </div>
+                    <div class="input-container">
+                        <select id="ref-2-relationship" name="ref-2-relationship">
+                            <option value="">--- Pilih Satu ---</option>
+                            <option value="parents">Ibu / Bapa</option>
+                            <option value="spouse">Suami / Isteri</option>
+                            <option value="siblings">Adik-beradik</option>
+                            <option value="child">Anak</option>
+                            <option value="in-laws">Mertua</option>
+                            <option value="others">Lain-lain</option>
+                        </select>
+                    </div>
+                </div>      
+
+
+                <div class="button-container">
+                    <button type="button" class="btn btn-primary" onclick="moveToPreviousTab()">Kembali</button>
+                    <button type="submit" class="btn btn-primary">Hantar</button>
+                </div>
+            </div>
+
+
         </form>
     </div>
 

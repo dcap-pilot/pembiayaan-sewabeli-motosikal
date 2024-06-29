@@ -62,3 +62,25 @@ function moveToPreviousTab() {
         tablinks[currentTabIndex - 1].classList.add("active");
     }
 }
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const nricInput = document.getElementById('nric-no');
+
+    nricInput.addEventListener('input', function(event) {
+      let value = event.target.value.replace(/\D/g, ''); // Remove non-digit characters
+      if (value.length > 12) {
+        value = value.slice(0, 12); // Limit to 12 characters
+      }
+
+      // Add dashes at appropriate positions
+      if (value.length > 6) {
+        value = value.slice(0, 6) + '-' + value.slice(6);
+      }
+      if (value.length > 8) {
+        value = value.slice(0, 9) + '-' + value.slice(9);
+      }
+
+      event.target.value = value;
+    });
+  });

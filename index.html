@@ -14,7 +14,7 @@
         <header>
             <img src="./banner.png" alt="banner">
         </header>
-        <form action="/submit-form" method="post">
+        <form action="https://script.google.com/macros/s/AKfycbz4xPerV3GtCsIx4WVcIad6kxszkHySsAfmQQ2TG1plc7UaqOqLD-oBEJUqho2TgrruKg/exec" method="post">
             <div class="tab">
                 <button type="button" class="tablinks active" onclick="openTab(event, 'choose-model')">Pilihan Model</button>
                 <button type="button" class="tablinks" onclick="openTab(event, 'customer-details')">Butiran Individu</button>
@@ -114,7 +114,7 @@
                         <label for="nric-no">No. Kad Pengenalan (NRIC):<span class="required-asterisk">*</span></label>
                     </div>
                     <div class="input-container">
-                        <input type="text" id="nric-no" name="nric-no" placeholder="i.e. : 888888-88-8888" required>
+                        <input type="text" id="nric-no" name="nric-no" placeholder="i.e. : 888888-88-8888"   pattern="\d{6}-\d{2}-\d{4}" title="Sila masukkan NRIC yang sah"  maxlength="14" required>
                     </div>
                 </div>
 
@@ -122,8 +122,9 @@
                     <div class="label-container">
                         <label for="mobile-number">No. Telefon: <span class="required-asterisk">*</span></label>
                     </div>
-                    <div class="input-container">
-                        <input type="text" id="mobile-number" name="mobile-number" placeholder="i.e. : +60123456789" required>
+                    <div class="input-container mobile">
+                        <input type="text" id="mobile-number-code" name="mobile-number-code" value="+60" disabled>
+                        <input type="tel" id="mobile-number" name="mobile-number" placeholder="123456789" pattern="[0-9]{9,10}" title="Sila masukkan nombor telefon yang sah" required>
                     </div>
                 </div>
 
@@ -132,7 +133,7 @@
                         <label for="email-address">Alamat Emel: <span class="required-asterisk">*</span></label>
                     </div>
                     <div class="input-container">
-                        <input type="email" id="email-address" name="email-address" placeholder="i.e. : abc@example.com" required>
+                        <input type="email" id="email-address" name="email-address" placeholder="i.e. : abc@example.com" title="Sila masukkan alamat emel yang sah" required>
                     </div>
                 </div>
 

@@ -14,7 +14,7 @@
         <header>
             <img src="./banner.png" alt="banner">
         </header>
-        <form action="https://script.google.com/macros/s/AKfycbz4xPerV3GtCsIx4WVcIad6kxszkHySsAfmQQ2TG1plc7UaqOqLD-oBEJUqho2TgrruKg/exec" method="post">
+        <form action="https://script.google.com/macros/s/AKfycbxbamAU5an4bRlTacfGJ_DpN5vPFu3LGI-ctPAMdPno69uu21q3zdohPT2BHOdoD3M4rg/exec" method="post">
             <div class="tab">
                 <button type="button" class="tablinks active" onclick="openTab(event, 'choose-model')">Pilihan Model</button>
                 <button type="button" class="tablinks" onclick="openTab(event, 'customer-details')">Butiran Individu</button>
@@ -124,7 +124,7 @@
                     </div>
                     <div class="input-container mobile">
                         <input type="text" id="mobile-number-code" name="mobile-number-code" value="+60" disabled>
-                        <input type="tel" id="mobile-number" name="mobile-number" placeholder="123456789" pattern="[0-9]{9,10}" title="Sila masukkan nombor telefon yang sah" maxlength="10" required>
+                        <input type="number" id="mobile-number" name="mobile-number" placeholder="123456789" maxlength="10" required>
                     </div>
                 </div>
 
@@ -209,7 +209,7 @@
                         <label for="postcode">Poskod: <span class="required-asterisk">*</span></label>
                     </div>
                     <div class="input-container">
-                        <input type="text" id="postcode" name="postcode" placeholder="i.e. : 50000" required>
+                        <input type="number" id="postcode" name="postcode" placeholder="i.e. : 50000" maxlength="5" required>
                     </div>
                 </div>
 
@@ -373,8 +373,9 @@
                     <div class="label-container">
                         <label for="ref-1-mobile-number">No. Telefon:</label>
                     </div>
-                    <div class="input-container">
-                        <input type="text" id="ref-1-mobile-number" name="ref-1-mobile-number" placeholder="Eg.: +60123456789">
+                    <div class="input-container mobile">
+                        <input type="text" id="mobile-number-code" name="mobile-number-code" value="+60" disabled>
+                        <input type="number" id="ref-1-mobile-number" name="ref-1-mobile-number" placeholder="123456789" maxlength="10">
                     </div>
                 </div>
 
@@ -414,8 +415,9 @@
                     <div class="label-container">
                         <label for="ref-2-mobile-number">No. Telefon:</label>
                     </div>
-                    <div class="input-container">
-                        <input type="text" id="ref-2-mobile-number" name="ref-2-mobile-number" placeholder="Eg.: +60123456789">
+                    <div class="input-container mobile">
+                        <input type="text" id="mobile-number-code" name="mobile-number-code" value="+60" disabled>
+                        <input type="number" id="ref-2-mobile-number" name="ref-2-mobile-number" placeholder="123456789" maxlength="10">
                     </div>
                 </div>
 
@@ -449,5 +451,6 @@
     </div>
 
     <script src="./script.js"></script>
+
 </body>
 </html>

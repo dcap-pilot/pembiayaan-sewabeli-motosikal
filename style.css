@@ -144,6 +144,16 @@ input[type=submit]:hover {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
+.mobile {
+    display: flex;
+    gap: 5px;
+}
+
+#mobile-number-code {
+    background: transparent;
+    width: 22%;
+}
+
 #total-price {
     background: transparent;
     outline: none;
@@ -297,4 +307,13 @@ label {
 .guide-required-asterisk {
     font-size: 12px;
     margin-bottom: 20px;
+}
+
+
+input::placeholder,
+textarea::placeholder {
+  color: #c0bfbf;          /* Placeholder text color */
+  font-size: 14px;      /* Placeholder text size */
+  font-style: italic;   /* Placeholder text style (italic, normal) */
+  opacity: 1;           /* Control the opacity of the placeholder text */
 }

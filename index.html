@@ -14,7 +14,7 @@
         <header>
             <img src="./banner.png" alt="banner">
         </header>
-        <form action="https://script.google.com/macros/s/AKfycbxbamAU5an4bRlTacfGJ_DpN5vPFu3LGI-ctPAMdPno69uu21q3zdohPT2BHOdoD3M4rg/exec" method="post">
+        <form id="myForm" action="https://script.google.com/macros/s/AKfycbxbamAU5an4bRlTacfGJ_DpN5vPFu3LGI-ctPAMdPno69uu21q3zdohPT2BHOdoD3M4rg/exec" method="post">
             <div class="tab">
                 <button type="button" class="tablinks active" onclick="openTab(event, 'choose-model')">Pilihan Model</button>
                 <button type="button" class="tablinks" onclick="openTab(event, 'customer-details')">Butiran Individu</button>
@@ -124,7 +124,7 @@
                     </div>
                     <div class="input-container mobile">
                         <input type="text" id="mobile-number-code" name="mobile-number-code" value="+60" disabled>
-                        <input type="number" id="mobile-number" name="mobile-number" placeholder="123456789" maxlength="10" required>
+                        <input type="tel" id="mobile-number" name="mobile-number" placeholder="123456789" maxlength="10" required>
                     </div>
                 </div>
 
@@ -275,9 +275,9 @@
                     <div class="input-container">
                         <select id="occupation-type" name="occupation-type" required>
                             <option value="">--- Pilih Satu ---</option>
+                            <option value="self-employed">Bekerja Sendiri</option>
                             <option value="private-sector-employee">Pekerja Swasta</option>
                             <option value="govt-job">Pekerja Kerajaan</option>
-                            <option value="self-employed">Bekerja Sendiri</option>
                         </select>
                     </div>
                 </div>
@@ -375,7 +375,7 @@
                     </div>
                     <div class="input-container mobile">
                         <input type="text" id="mobile-number-code" name="mobile-number-code" value="+60" disabled>
-                        <input type="number" id="ref-1-mobile-number" name="ref-1-mobile-number" placeholder="123456789" maxlength="10">
+                        <input type="tel" id="ref-1-mobile-number" name="ref-1-mobile-number" placeholder="123456789" maxlength="10">
                     </div>
                 </div>
 
@@ -417,7 +417,7 @@
                     </div>
                     <div class="input-container mobile">
                         <input type="text" id="mobile-number-code" name="mobile-number-code" value="+60" disabled>
-                        <input type="number" id="ref-2-mobile-number" name="ref-2-mobile-number" placeholder="123456789" maxlength="10">
+                        <input type="tel" id="ref-2-mobile-number" name="ref-2-mobile-number" placeholder="123456789" maxlength="10">
                     </div>
                 </div>
 
@@ -442,7 +442,7 @@
 
                 <div class="button-container">
                     <button type="button" class="btn btn-primary" onclick="moveToPreviousTab()">Kembali</button>
-                    <button type="submit" class="btn btn-primary">Hantar</button>
+                    <button type="submit" id="submit-button" class="btn btn-primary">Hantar</button>
                 </div>
             </div>
 
@@ -450,6 +450,7 @@
         </form>
     </div>
 
+    
     <script src="./script.js"></script>
 
 </body>
